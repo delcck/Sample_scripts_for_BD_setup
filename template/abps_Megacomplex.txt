@@ -1,0 +1,29 @@
+read
+  mol pqr XXX.pqr
+end
+elec
+  mg-auto
+  dime 190 190 190
+  cglen 360 360 290
+  cgcent 0 0 95
+  fglen 360 360 200
+  fgcent 0 0 100
+  mol 1
+  npbe
+  bcfl sdh
+  srfm smol
+  chgm spl2
+  ion 1 CONC 2.0
+  ion -1 CONC 2.0
+  pdie  12.0
+  sdie  78.54
+  sdens  10.0
+  srad  1.4
+  swin  0.3
+  temp  TEMP
+  gamma  0.105
+  calcenergy no
+  calcforce no
+  write pot dx XXX.CONC.elec.tmp
+end
+quit
