@@ -1,0 +1,2 @@
+The scripts shown in this folder are developed from those used in the work: https://doi.org/10.1021/acs.biochem.1c00696.
+You are encouraged to cite that article for the use or adaptations of any script in thie github. Thanks!
