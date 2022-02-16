@@ -104,7 +104,7 @@ puts $ch {
 import numpy as np
 from scipy.cluster import vq
 
-numClusters = 3
+numClusters = 1
 }
 puts $ch "d = np.loadtxt('$FtempName')"
 puts $ch {
@@ -124,7 +124,7 @@ scale = d2[ind,:] / d2w[ind,:]
 
 ## perform cluster analysis
 codeBook,dist = vq.kmeans(d2w , numClusters)
-assignments, dists = vq.vq( vq.whiten(d[:,:2]), codeBook)
+assignments, dists = vq.vq( d[:,:2]/scale, codeBook)
 
 print( " ".join(["%d" % a for a in assignments]) )
 print( " ".join(["%.3f" % (c[0]*scale[0]) for c in codeBook]) )
