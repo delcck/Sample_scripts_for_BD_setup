@@ -3,6 +3,6 @@ This respiratory contains sample scripts for setting up Brownian dynamics (BD) s
 "Atomic Resolutioin Brownian Dynamics" (ARBD) at https://bionano.physics.illinois.edu/arbd.
 
 Currently, these scripts are being uploaded to this respiratory based on a finished project. 
-The various paths used in each script may, thus, do not appear immediately comprehensible.
+The various paths used in each script may, thus, may not appear immediately comprehensible.
 
 Please cite our article at https://pubmed.ncbi.nlm.nih.gov/35025510/ if using these scripts for your system. Thanks. = )
